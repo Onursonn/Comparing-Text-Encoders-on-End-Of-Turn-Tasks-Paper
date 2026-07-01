@@ -1,0 +1,54 @@
+# --- Python / IDE ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.jupyter/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- Caches (matplotlib, HuggingFace, torch) ---
+.matplotlib_cache/
+.cache/
+**/.cache/
+
+# --- Logs ---
+*.log
+
+# --- Model checkpoints (regenerable) ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# --- Agent / planning (not for submission) ---
+AGENTS.md
+PLAN.md
+RULES.md
+next_steps_plan.md
+
+# --- Internal working docs ---
+docs/
+report/
+
+# --- Datasets (fetch via data/download.sh) ---
+final_project/data/ftad/
+final_project/data/turns-2k/
+final_project/data/semantic-turn-taking-benchmark-ten/
+final_project/data/manifest.json
+
+# --- Training outputs (regenerable) ---
+final_project/results/*
+!final_project/results/.gitignore
